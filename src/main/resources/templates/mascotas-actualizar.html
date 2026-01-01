@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mascotas - Actualizar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <h1>Ejemplo de app monolitica</h1>
+    <h2>Actualizar  Mascota</h2>
+
+    <form th:action="@{/mascotas/actualizar}" th:object="${mascota}" method="post">
+        <input th:field="*{id}" type="hidden">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input th:field="*{nombre}" type="text" placeholder="Ingrese nombre" class="form-control">
+        <label for="edad" class="form-label">Edad</label>
+        <input th:field="*{edad}" type="number" class="form-control">
+        <label for="observaciones" class="form-label">Observaciones</label>
+        <input th:field="*{observaciones}" type="text" placeholder="Ingrese observaciones" class="form-control">
+
+        <button type="submit" class="btn btn-success btn-sm">Actualizar</button>
+        <a th:href="@{/mascotas}" class="btn btn-danger btn-sm">Cancelar</a>
+    </form>
+</div>
+</body>
+</html>
