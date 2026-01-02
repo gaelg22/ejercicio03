@@ -1,6 +1,7 @@
 com\holamundo\com\holamundo\models\Mascota.class
 com\holamundo\com\holamundo\Application.class
 com\holamundo\com\holamundo\services\MascotasService.class
+com\holamundo\com\holamundo\controllers\HomeController.class
 com\holamundo\com\holamundo\models\Veterinario.class
 com\holamundo\com\holamundo\services\VeterinarioService.class
 com\holamundo\com\holamundo\controllers\CitasController.class
